@@ -440,6 +440,12 @@ main#home h1 {
     line-height: 1;
     margin-bottom: 1rem;
   }
+  h1.large-heading,
+  h2.large-heading,
+  h3.large-heading {
+    font-size: 4rem;
+    padding: 0;
+  }
 }
 
 ul.menu-nav,
