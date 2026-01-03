@@ -204,6 +204,7 @@ h2,
 h3 {
   margin: 0;
   font-weight: 400;
+  width: fit-content;
 }
 
 h1.large-heading,
@@ -230,7 +231,7 @@ h2.small-heading,
 h3.small-heading {
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
-  background: rgba(24, 24, 24, 0.5);
+  background: #111;
 }
 
 a {
