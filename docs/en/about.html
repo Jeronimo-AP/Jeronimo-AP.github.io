@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+    <link href="../scss/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+        <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+        <nav class="menu">
+            <div class="menu-branding">
+            <div class="mypicture"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                    Home
+                    </a>
+                </li>
+                <li class="nav-item current">
+                    <a href="#" class="nav-link ">
+                    About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="work.html" class="nav-link">
+                    My Work
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                    Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id=about>
+        <h1 class="large-heading">
+            About <span class="text-secondary">Me</span>
+        </h1>
+        <h2 class="small-heading">
+            Physics graduate focused on scientific computing and software development
+        </h2>
+        <div class="about-info">
+            <img src="../img/profilePic.jpeg" alt="Jerónimo Noé Acito Pino" class="bio-img">
+            <div class="bio">
+                <h3 class="text-secondary">BIO</h3>
+                <p style="font-size: 1.2rem;">
+                    I am a physics graduate focused on computational methods, numerical modeling, and scientific software development. My academic work centers on electronic structure calculations using DFT, GW, and BSE methods, primarily with the all-electron code <em>exciting</em>. I build modular Python and Fortran tools for HPC workflows, data analysis, and visualization, and have experience in software engineering fundamentals, data structures, and web development.
+                </p>
+            </div>
+            <div class="job job-1">
+                <h3>Graduate Research - Computational Physics</h3>
+                <h5>Density Functional Theory & Many-Body Methods</h5>
+                <p>
+                Conducted electronic structure and optical property calculations for semiconductors and insulators
+                using DFT, G₀W₀, and BSE methods. Analyzed optical and X-ray absorption spectra and compared
+                first-principles results with experimental data.
+                </p>
+            </div>
+            <div class="job job-2">
+                <h3>Scientific Programming & Automation</h3>
+                <h5>Python & Fortran Development</h5>
+                <p>
+                Developed custom Python and Fortran tools for post-processing large simulation datasets,
+                including band structure visualization, density of states analysis, and automated plotting pipelines.
+                Focused on clean, modular, and reproducible code.
+                </p>
+            </div>
+            <div class="job job-3">
+                <h3>Technical Skills & Tooling</h3>
+                <h5>HPC, Linux, Version Control</h5>
+                <p>
+                Experienced with Linux-based HPC environments, batch job scheduling, and version control using Git and GitHub.
+                Comfortable working with large codebases, remote clusters, and collaborative research workflows.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer id="main-footer">
+        copyright &copy; 2021
+    </footer>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/main.js"></script>
+ </body>
+</html>
