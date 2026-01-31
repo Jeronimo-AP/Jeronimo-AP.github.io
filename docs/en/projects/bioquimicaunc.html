@@ -7,80 +7,97 @@
     <link rel="stylesheet" href="../../scss/styles.css">
 </head>
 
-<body id="background-image">
-
-<header>
-  <!-- SAME MENU AS OTHER PAGES -->
-  <div class="menu-btn">
-    <div class="btn-line"></div>
-    <div class="btn-line"></div>
-    <div class="btn-line"></div>
-  </div>
-
-  <nav class="menu">
-    <div class="menu-branding">
-      <div class="mypicture"></div>
-    </div>
-    <ul class="menu-nav">
-      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-      <li class="nav-item current"><a href="work.html" class="nav-link">My Work</a></li>
-      <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-  <h1 class="large-heading">
-    Student <span class="text-secondary">Site</span>
-  </h1>
-
-    <h2 class="small-heading">
-        bioquimicaunc.com - Academic Community Platform
-    </h2>
-
-    <div class="about-info">
-
-        <div class="carousel">
-            <div class="carousel-track">
-                <img src="../../img/projects/bioquimicaunc_index.png" class="carousel-img active" alt="Home">
-                <img src="../../img/projects/bioquimicaunc_intro.png" class="carousel-img" alt="Intro">
-                <img src="../../img/projects/bioquimicaunc_forum.png" class="carousel-img" alt="Forum">
-                <img src="../../img/projects/bioquimicaunc_listings.png" class="carousel-img" alt="Listings">
-                <img src="../../img/projects/bioquimicaunc_resourses.png" class="carousel-img" alt="Resources">
-                <img src="../../img/projects/bioquimicaunc_suggestions.png" class="carousel-img" alt="Suggestions">
-            </div>
+<body>
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
         </div>
 
-        <div class="bio">
-            <p>
-                <strong>bioquimicaunc.com</strong> is a student-focused academic platform designed to centralize
-                course material, announcements, and community interaction for the Bioquímica program.
-            </p>
-
-            <p>
-                The site was built with an emphasis on clarity, accessibility, and maintainability,
-                using modern HTML, CSS, and JavaScript practices.
-            </p>
-
-            <p>
-                It includes structured content sections, responsive layouts, and interactive elements,
-                and was developed with future backend expansion in mind.
-            </p>
-
-            <div class="icons">
-                <a href="https://bioquimicaunc.com" target="_blank" class="btn-light">Live Site</a>
-                <a href="https://github.com/Jeronimo-AP/bioquimicaunc" target="_blank" class="btn-dark">Source Code</a>
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="mypicture"></div>
             </div>
+            <ul class="menu-nav">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
+                <li class="nav-item current"><a href="../work.html" class="nav-link">My Work</a></li>
+                <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="large-heading">
+            Student <span class="text-secondary">Site</span>
+        </h1>
+
+        <h2 class="small-heading">
+            bioquimicaunc.com - Academic Community Platform
+        </h2>
+
+        <div class="about-info">
+            <!-- FEATURE SELECTOR -->
+            <div class="feature-selector">
+                <button data-feature="home" class="active">Home</button>
+                <button data-feature="forum">Forum</button>
+                <button data-feature="listings">Listings</button>
+                <button data-feature="resources">Resources</button>
+            </div>
+
+            <div class="project-showcase">
+
+                <!-- IMAGE PANEL -->
+                <div class="showcase-image">
+                    <img id="featureImage" src="../../img/projects/bioquimicaunc_index.png" alt="Homepage overview">
+                </div>
+
+                <!-- TEXT PANEL -->
+                <div class="showcase-info">
+                    <h3 id="featureTitle">Homepage & Navigation</h3>
+
+                    <p id="featureDescription">
+                        Clear landing page with structured navigation to course material,
+                        announcements, and community features. Designed for fast orientation
+                        and accessibility.
+                    </p>
+
+                    <ul class="feature-list">
+                        <li>Responsive layout</li>
+                        <li>Semantic HTML structure</li>
+                        <li>Mobile-first navigation</li>
+                    </ul>
+
+                    <div class="icons">
+                        <a href="https://bioquimicaunc.com" target="_blank" class="btn-light">
+                            Live Site
+                        </a>
+                        <a href="https://github.com/Jeronimo-AP/bioquimicaunc" target="_blank" class="btn-dark">
+                            Source Code
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IMAGE MODAL -->
+            <div class="image-modal" id="imageModal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="modalImage">
+            </div>
+
+
         </div>
-    </div>
-</main>
+    </main>
 
-<footer id="main-footer">
-  &copy; 2026
-</footer>
+    <footer id="main-footer">
+    &copy; 2026
+    </footer>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="../../js/main.js"></script>
+    <canvas id="bg-simulation"></canvas>
+
+    <script type="module" src="../../js/bg-sim.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../../js/main.js"></script>
 </body>
 </html>
