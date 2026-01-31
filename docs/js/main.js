@@ -1,4 +1,6 @@
-//Setting the DOM constants
+// =======================
+// MENU (jQuery)
+// =======================
 
 const $menuBtn=$('.menu-btn');
 const $menu=$('.menu');
@@ -27,3 +29,19 @@ function toggleMenu(){
         showMenu=false
     }
 }
+
+// =======================
+// CAROUSEL (Vanilla JS)
+// =======================
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.carousel').forEach(carousel => {
+    const track = carousel.querySelector('.carousel-track');
+    const images = carousel.querySelectorAll('.carousel-img');
+    let index = 0;
+
+    setInterval(() => {
+      index = (index + 1) % images.length;
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }, 3000);
+  });
+});
