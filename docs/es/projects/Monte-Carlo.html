@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="es"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Monte Carlo project</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <title>Proyecto Monte Carlo</title> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="../../scss/styles.css">
 </head>
 
@@ -21,71 +19,65 @@
                 <div class="mypicture"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
-                <li class="nav-item current"><a href="../work.html" class="nav-link">My Work</a></li>
-                <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="../about.html" class="nav-link">Sobre Mí</a></li>
+                <li class="nav-item current"><a href="../work.html" class="nav-link">Mis Trabajos</a></li>
+                <li class="nav-item"><a href="../contact.html" class="nav-link">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <h1 class="large-heading">
-            Monte Carlo <span class="text-secondary">Simulations</span>
+            Simulaciones <span class="text-secondary">Monte Carlo</span>
         </h1>
 
         <h2 class="small-heading">
-            Fortran · Monte Carlo methods · Statistical analysis · Scientific computing
+            Fortran · Métodos de Monte Carlo · Análisis estadístico · Computación científica
         </h2>
 
         <div class="project-details">
-            <!-- FEATURE SELECTOR -->
             <div class="feature-selector">
-                <button data-feature="lln" class="active">LLN</button>
-                <button data-feature="randomwalks">Random Walks</button>
-                <button data-feature="rejection">Rejection</button>
-                <button data-feature="inversecdf">Inverse CDF</button>
-                <button data-feature="integration">MC Integration</button>
+                <button data-feature="lln" class="active">LGN</button> <button data-feature="randomwalks">Caminatas Aleatorias</button>
+                <button data-feature="rejection">Rechazo</button>
+                <button data-feature="inversecdf">FDC Inversa</button> <button data-feature="integration">Integración MC</button>
             </div>
 
             <div class="project-showcase">
-                <!-- TEXT PANEL -->
                 <div class="showcase-info">
-                    <h3 id="featureTitle">Law of Large Numbers</h3>
+                    <h3 id="featureTitle">Ley de los Grandes Números</h3>
 
                     <p id="featureDescription">
-                        Statistical demonstration of the Law of Large Numbers using sums of uniformly distributed random variables.
+                        Demostración estadística de la Ley de los Grandes Números utilizando sumas de variables aleatorias distribuidas uniformemente.
                     </p>
 
                     <ul class="feature-list">
-                        <li>Moment analysis (mean, variance, skewness, kurtosis)</li>
-                        <li>Emergence of Gaussian distributions</li>
-                        <li>Visualization via histograms and videos</li>
-                        <li>Clear convergence toward expected values</li>
+                        <li>Análisis de momentos (media, varianza, asimetría, curtosis)</li>
+                        <li>Surgimiento de distribuciones gaussianas</li>
+                        <li>Visualización mediante histogramas y videos</li>
+                        <li>Clara convergencia hacia los valores esperados</li>
                     </ul>
 
                     <div class="item project-card">
                         <a href="https://github.com/MrMxyzptlk-jpg/Monte-Carlo-Simulations?tab=readme-ov-file#monte-carlo-simulations-in-fortran"  target="_blank" class="btn-light">
-                            <i class="fas fa-eye"></i> Monte Carlo Simulations
+                            <i class="fas fa-eye"></i> Simulaciones Monte Carlo
                         </a>
                         <a href="https://github.com/MrMxyzptlk-jpg/Monte-Carlo-Simulations" target="_blank" class="btn-dark">
-                            <i class="fab fa-github"></i> Source Code
-                    </a>
+                            <i class="fab fa-github"></i> Código Fuente
+                        </a>
                     </div>
                 </div>
 
-                <!-- IMAGE PANEL -->
                 <div class="showcase-image">
                     <img id="featureImage" src="../../img/projects/MC-LLN.png" alt="Law of Large Numbers" style="border: 2px solid cyan;">
+                    <video id="featureVideo" class="hidden" autoplay muted loop playsinline></video>
                 </div>
             </div>
 
-            <!-- IMAGE MODAL -->
             <div class="image-modal" id="imageModal">
                 <span class="close-modal">&times;</span>
                 <img class="modal-content" id="modalImage">
             </div>
-
 
         </div>
     </main>
@@ -100,7 +92,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../../js/main.js"></script>
     <script type="module">
-        import { projectFeatures } from "../../js/projects/en/Monte-Carlo.js";
+        import { projectFeatures } from "../../js/projects/es/Monte-Carlo.js";
         import { initProjectShowcase } from "../../js/project-showcase.js";
 
         initProjectShowcase(projectFeatures);

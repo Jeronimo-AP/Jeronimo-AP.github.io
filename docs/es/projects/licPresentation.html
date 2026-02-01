@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="es"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Licentiate Degree's Presentation</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <title>Presentación de Licenciatura</title> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="../../scss/styles.css">
 </head>
 
@@ -21,36 +19,33 @@
                 <div class="mypicture"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
-                <li class="nav-item current"><a href="../work.html" class="nav-link">My Work</a></li>
-                <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="../about.html" class="nav-link">Sobre Mí</a></li>
+                <li class="nav-item current"><a href="../work.html" class="nav-link">Mis Trabajos</a></li>
+                <li class="nav-item"><a href="../contact.html" class="nav-link">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <h1 class="large-heading">
-            Licentiate Degree's <span class="text-secondary">Presentation</span>
-        </h1>
+            Presentación de <span class="text-secondary">Licenciatura</span> </h1>
 
         <h2 class="small-heading">
-            A custom, non-linear web-based presentation system designed for live scientific storytelling and real-time data exploration.
+            Un sistema de presentación web personalizado y no lineal, diseñado para la narrativa científica en vivo y la exploración de datos en tiempo real.
         </h2>
 
         <div class="project-details">
-            <!-- FEATURE SELECTOR -->
             <div class="feature-selector">
-                <button data-feature="structure" class="active">Structure</button>
-                <button data-feature="tech">Technology</button>
-                <button data-feature="interactivity">Interactivity</button>
-                <button data-feature="visuals">Visuals</button>
-                <button data-feature="purpose">Design Goals</button>
+                <button data-feature="structure" class="active">Estructura</button>
+                <button data-feature="tech">Tecnología</button>
+                <button data-feature="interactivity">Interactividad</button>
+                <button data-feature="visuals">Visuales</button>
+                <button data-feature="purpose">Objetivos</button>
             </div>
 
             <div class="project-showcase">
 
-                <!-- TEXT PANEL -->
                 <div class="showcase-info">
                     <h3 id="featureTitle"></h3>
 
@@ -60,18 +55,16 @@
 
                     <div class="item project-card">
                         <a href="https://mrmxyzptlk-jpg.github.io/Graduate_Presentation/" class="btn-light" target="_blank">
-                            <i class="fas fa-book"></i> Licentiate Degree's Presentation
+                            <i class="fas fa-book"></i> Ver Presentación
                         </a>
                         <a href="https://github.com/MrMxyzptlk-jpg/Graduate_Presentation" class="btn-dark" target="_blank">
-                            <i class="fab fa-github"></i> Source
+                            <i class="fab fa-github"></i> Código Fuente
                         </a>
                     </div>
                 </div>
-                <!-- IMAGE PANEL -->
                 <div class="showcase-image"></div>
             </div>
 
-            <!-- IMAGE MODAL -->
             <div class="image-modal" id="imageModal">
                 <span class="close-modal">&times;</span>
                 <img class="modal-content" id="modalImage">
@@ -91,10 +84,11 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../../js/main.js"></script>
     <script type="module">
-        import { projectFeatures } from "../../js/projects/en/lic-presentation.js";
+        import { projectFeatures } from "../../js/projects/es/lic-presentation.js";
         import { initProjectShowcase } from "../../js/project-showcase.js";
 
         initProjectShowcase(projectFeatures);
+        // Force click on Structure to load initial content
         requestAnimationFrame(() => { document.querySelector('[data-feature="structure"]')?.click(); });
     </script>
 </body>

@@ -78,8 +78,12 @@ export function initProjectShowcase(features) {
 function renderStructureGraph(parent, openModalCallback) {
     parent.innerHTML = ""; // clear previous content
 
+    const currentLang = document.documentElement.lang;
+    const graphTitleText = currentLang === 'es'
+        ? "Gráfico de Estructura de la Presentación"
+        : "Presentation Structure Graph";
     const title = document.createElement("h3");
-    title.textContent = "Presentation Structure Graph";
+    title.textContent = graphTitleText;
     title.classList.add('graph-title')
     parent.appendChild(title);
 

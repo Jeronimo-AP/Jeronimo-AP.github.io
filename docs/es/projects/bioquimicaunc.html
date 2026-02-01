@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="es"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Site - Bioquímica UNC</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <title>Sitio del Estudiante - Bioquímica UNC</title> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="../../scss/styles.css">
 </head>
 
@@ -21,71 +19,65 @@
                 <div class="mypicture"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
-                <li class="nav-item current"><a href="../work.html" class="nav-link">My Work</a></li>
-                <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="../about.html" class="nav-link">Sobre Mí</a></li>
+                <li class="nav-item current"><a href="../work.html" class="nav-link">Mis Trabajos</a></li>
+                <li class="nav-item"><a href="../contact.html" class="nav-link">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <h1 class="large-heading">
-            Student <span class="text-secondary">Site</span>
-        </h1>
+            Sitio del <span class="text-secondary">Estudiante</span> </h1>
 
         <h2 class="small-heading">
-            bioquimicaunc.com - Academic Community Platform
-        </h2>
+            bioquimicaunc.com - Plataforma de Comunidad Académica </h2>
 
         <div class="project-details">
-            <!-- FEATURE SELECTOR -->
             <div class="feature-selector">
-                <button data-feature="home" class="active">Home</button>
-                <button data-feature="forum">Forum</button>
-                <button data-feature="listings">Listings</button>
-                <button data-feature="resources">Resources</button>
+                <button data-feature="home" class="active">Inicio</button>
+                <button data-feature="forum">Foro</button>
+                <button data-feature="listings">Clasificados</button>
+                <button data-feature="resources">Recursos</button>
             </div>
 
             <div class="project-showcase">
-                <!-- TEXT PANEL -->
                 <div class="showcase-info">
-                    <h3 id="featureTitle">Homepage & Navigation</h3>
+                    <h3 id="featureTitle">Inicio y Navegación</h3>
 
                     <p id="featureDescription">
-                        Clear landing page with structured navigation to course material,
-                        announcements, and community features. Designed for fast orientation
-                        and accessibility.
+                        Página de inicio clara con navegación estructurada hacia material de estudio,
+                        anuncios y funciones comunitarias. Diseñado para una rápida orientación
+                        y accesibilidad.
                     </p>
 
                     <ul class="feature-list">
-                        <li>Responsive layout</li>
-                        <li>Semantic HTML structure</li>
-                        <li>Responsive layout</li>
+                        <li>Diseño responsivo</li>
+                        <li>Estructura HTML semántica</li>
+                        <li>Accesibilidad mejorada</li>
                     </ul>
 
                     <div class="item project-card">
                         <a href="https://bioquimicaunc.com" target="_blank" class="btn-light">
-                            <i class="fas fa-eye"></i> Live Site
+                            <i class="fas fa-eye"></i> Ver Sitio
                         </a>
                         <a href="https://github.com/MrMxyzptlk-jpg/bioquimicaunc.git" target="_blank" class="btn-dark">
-                            <i class="fab fa-github"></i> Source Code
-                    </a>
+                            <i class="fab fa-github"></i> Código Fuente
+                        </a>
                     </div>
                 </div>
 
-                <!-- IMAGE PANEL -->
                 <div class="showcase-image">
-                    <img id="featureImage" src="../../img/projects/bioquimicaunc_index.png" alt="Homepage overview">
+                    <img id="featureImage" src="../../img/projects/bioquimicaunc_index.png" alt="Vista general del inicio">
+                    <video id="featureVideo" class="hidden" autoplay muted loop playsinline></video>
                 </div>
             </div>
 
-            <!-- IMAGE MODAL -->
             <div class="image-modal" id="imageModal">
                 <span class="close-modal">&times;</span>
                 <img class="modal-content" id="modalImage">
             </div>
-
 
         </div>
     </main>
@@ -100,7 +92,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../../js/main.js"></script>
     <script type="module">
-        import { projectFeatures } from "../../js/projects/en/bioquimicaunc.js";
+        import { projectFeatures } from "../../js/projects/es/bioquimicaunc.js";
         import { initProjectShowcase } from "../../js/project-showcase.js";
 
         initProjectShowcase(projectFeatures);

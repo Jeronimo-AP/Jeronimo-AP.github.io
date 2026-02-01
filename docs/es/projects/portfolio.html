@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="es"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Site</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <title>Portafolio Personal</title> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="../../scss/styles.css">
 </head>
 
@@ -21,64 +19,58 @@
                 <div class="mypicture"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
-                <li class="nav-item current"><a href="../work.html" class="nav-link">My Work</a></li>
-                <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">Sobre Mí</a></li>
+                <li class="nav-item current"><a href="../work.html" class="nav-link">Mis Trabajos</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <h1 class="large-heading">
-            Portfolio <span class="text-secondary">Site</span>
-        </h1>
+            Sitio <span class="text-secondary">Portafolio</span> </h1>
 
         <div class="project-details">
-            <!-- FEATURE SELECTOR -->
             <div class="feature-selector">
-                <button data-feature="layout" class="active">Layout</button>
-                <button data-feature="animation">Animation</button>
+                <button data-feature="layout" class="active">Diseño</button>
+                <button data-feature="animation">Animación</button>
             </div>
 
             <div class="project-showcase">
-                <!-- TEXT PANEL -->
                 <div class="showcase-info">
-                    <h3 id="featureTitle">Layout & Structure</h3>
+                    <h3 id="featureTitle">Diseño y Estructura</h3>
 
                     <p id="featureDescription">
-                        Modular layout designed for scalability and clarity.
+                        Diseño modular pensado para la escalabilidad y la claridad.
                     </p>
 
                     <ul class="feature-list">
-                        <li>Physics-style static portfolio website</li>
-                        <li>Grid-based layout</li>
-                        <li>Reusable components</li>
+                        <li>Sitio web estático estilo "Física"</li>
+                        <li>Diseño basado en cuadrícula (Grid)</li>
+                        <li>Componentes reutilizables</li>
                     </ul>
 
                     <div class="item project-card">
                         <a href="https://jeronimo-ap.github.io" target="_blank" class="btn-light">
-                            <i class="fas fa-eye"></i> Live Site
+                            <i class="fas fa-eye"></i> Ver Sitio
                         </a>
                         <a href="https://github.com/Jeronimo-AP/Jeronimo-AP.github.io" target="_blank" class="btn-dark">
-                            <i class="fab fa-github"></i> Source Code
-                    </a>
+                            <i class="fab fa-github"></i> Código Fuente
+                        </a>
                     </div>
                 </div>
 
-                <!-- IMAGE PANEL -->
                 <div class="showcase-image">
-                    <img id="featureImage" src="../../img/projects/WebPage.png" alt="Homepage overview" style="border: 2px solid cyan;">
-                    <video id="featureVideo" src="" alt="Homepage overview" style="border: 2px solid cyan;" class="hidden" muted loop playsinline></video>
+                    <img id="featureImage" src="../../img/projects/WebPage.png" alt="Vista general del inicio" style="border: 2px solid cyan;">
+                    <video id="featureVideo" src="" alt="Vista general del inicio" style="border: 2px solid cyan;" class="hidden" autoplay muted loop playsinline></video>
                 </div>
             </div>
 
-            <!-- IMAGE MODAL -->
             <div class="image-modal" id="imageModal">
                 <span class="close-modal">&times;</span>
                 <img class="modal-content" id="modalImage">
             </div>
-
 
         </div>
     </main>
@@ -93,7 +85,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../../js/main.js"></script>
     <script type="module">
-        import { projectFeatures } from "../../js/projects/en/portfolio.js";
+        import { projectFeatures } from "../../js/projects/es/portfolio.js";
         import { initProjectShowcase } from "../../js/project-showcase.js";
 
         initProjectShowcase(projectFeatures);
