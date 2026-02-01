@@ -587,6 +587,12 @@ PROJECT SHOWCASE
     margin-bottom: 1rem;
 }
 
+.graph-title {
+    font-size: 1.5rem;
+    color: var(--accent-cyan);
+    margin-bottom: 1rem;
+}
+
 .project-details {
     max-width: 1100px;
     margin: 0 auto;
@@ -653,4 +659,18 @@ PROJECT SHOWCASE
     .project-showcase {
         grid-template-columns: 1fr;
     }
+}
+
+#structure-wrapper {
+    padding: 1rem;
+    border: 2px solid cyan;
+    border-radius: 8px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+#structure-graph {
+  width: 100%;
+  height: auto;
+  display: block;
 }

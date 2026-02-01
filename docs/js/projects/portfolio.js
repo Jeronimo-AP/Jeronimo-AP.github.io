@@ -4,13 +4,13 @@ export const projectFeatures = {
     title: "Layout & Structure",
     desc: "Modular layout designed for scalability and clarity.",
     points: [
-      "Reusable components",
+      "Physics-style static portfolio website",
       "Grid-based layout",
-      "Consistent spacing system"
+      "Reusable components"
     ]
   },
   animation: {
-    video: "../../videos/projects.mp4",
+    video: "../../videos/projects/portfolio.mp4",
     title: "Animations & Interactions",
     desc: "Subtle animations to guide user attention.",
     points: [

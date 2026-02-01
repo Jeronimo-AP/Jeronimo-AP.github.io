@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Site - Bioquímica UNC</title>
+    <title>Licentiate Degree's Presentation</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="../../scss/styles.css">
 </head>
@@ -31,53 +31,44 @@
 
     <main>
         <h1 class="large-heading">
-            Student <span class="text-secondary">Site</span>
+            Licentiate Degree's <span class="text-secondary">Presentation</span>
         </h1>
 
         <h2 class="small-heading">
-            bioquimicaunc.com - Academic Community Platform
+            A custom, non-linear web-based presentation system designed for live scientific storytelling and real-time data exploration.
         </h2>
 
         <div class="project-details">
             <!-- FEATURE SELECTOR -->
             <div class="feature-selector">
-                <button data-feature="home" class="active">Home</button>
-                <button data-feature="forum">Forum</button>
-                <button data-feature="listings">Listings</button>
-                <button data-feature="resources">Resources</button>
+                <button data-feature="structure" class="active">Structure</button>
+                <button data-feature="tech">Technology</button>
+                <button data-feature="interactivity">Interactivity</button>
+                <button data-feature="visuals">Visuals</button>
+                <button data-feature="purpose">Design Goals</button>
             </div>
 
             <div class="project-showcase">
+
                 <!-- TEXT PANEL -->
                 <div class="showcase-info">
-                    <h3 id="featureTitle">Homepage & Navigation</h3>
+                    <h3 id="featureTitle"></h3>
 
-                    <p id="featureDescription">
-                        Clear landing page with structured navigation to course material,
-                        announcements, and community features. Designed for fast orientation
-                        and accessibility.
-                    </p>
+                    <p id="featureDescription"></p>
 
-                    <ul class="feature-list">
-                        <li>Responsive layout</li>
-                        <li>Semantic HTML structure</li>
-                        <li>Responsive layout</li>
-                    </ul>
+                    <ul class="feature-list"></ul>
 
                     <div class="item project-card">
-                        <a href="https://bioquimicaunc.com" target="_blank" class="btn-light">
-                            <i class="fas fa-eye"></i> Live Site
+                        <a href="https://mrmxyzptlk-jpg.github.io/Graduate_Presentation/" class="btn-light" target="_blank">
+                            <i class="fas fa-book"></i> Licentiate Degree's Presentation
                         </a>
-                        <a href="https://github.com/MrMxyzptlk-jpg/bioquimicaunc.git" target="_blank" class="btn-dark">
-                            <i class="fab fa-github"></i> Source Code
-                    </a>
+                        <a href="https://github.com/MrMxyzptlk-jpg/Graduate_Presentation" class="btn-dark" target="_blank">
+                            <i class="fab fa-github"></i> Source
+                        </a>
                     </div>
                 </div>
-
                 <!-- IMAGE PANEL -->
-                <div class="showcase-image">
-                    <img id="featureImage" src="../../img/projects/bioquimicaunc_index.png" alt="Homepage overview">
-                </div>
+                <div class="showcase-image"></div>
             </div>
 
             <!-- IMAGE MODAL -->
@@ -100,10 +91,11 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../../js/main.js"></script>
     <script type="module">
-        import { projectFeatures } from "../../js/projects/bioquimicaunc.js";
+        import { projectFeatures } from "../../js/projects/lic-presentation.js";
         import { initProjectShowcase } from "../../js/project-showcase.js";
 
         initProjectShowcase(projectFeatures);
+        requestAnimationFrame(() => { document.querySelector('[data-feature="structure"]')?.click(); });
     </script>
 </body>
 </html>
