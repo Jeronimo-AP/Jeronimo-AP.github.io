@@ -1,3 +1,11 @@
+:root {
+    /* Color Variables for easy theming */
+    --bg-color: #111;
+    --accent-pink:#E26EE5;
+    --accent-cyan:#A3D8FF;
+    --btn-bg: #333;
+}
+
 .menu-btn {
     position: absolute;
     z-index: 3;
@@ -104,7 +112,7 @@
     background: url(../img/profilePic.jpeg);
     background-size: cover;
     border-radius: 50%;
-    border: solid 3px #A3D8FF;
+    border: solid 3px var(--accent-cyan);
 }
 
 .menu .nav-item {
@@ -120,7 +128,7 @@
 }
 
 .menu .nav-item.current > a {
-    color: #A3D8FF;
+    color: var(--accent-cyan);
 }
 
 .menu .nav-link {
@@ -138,7 +146,7 @@
 
 .lang-switch .nav-link:hover,
 .menu .nav-link:hover {
-    color: #E26EE5;
+    color: var(--accent-pink);
 }
 
 .nav-item:nth-child(1) {
@@ -174,7 +182,7 @@
 }
 
 body {
-    background: #111;
+    background: var(--bg-color);
     color: #fff;
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -260,7 +268,7 @@ header {
 }
 
 .text-secondary {
-    color: #E26EE5;
+    color: var(--accent-pink);
 }
 
 main {
@@ -277,7 +285,7 @@ main .icons a {
 }
 
 main .icons a:hover {
-    color: #E26EE5;
+    color: var(--accent-pink);
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
 }
@@ -307,7 +315,7 @@ main#home h1 {
     grid-area: bioimg;
     margin: auto;
     border-radius: 50%;
-    border: #A3D8FF 3px solid;
+    border: var(--accent-cyan) 3px solid;
     width: 265px;
     height: 265px;
 }
@@ -349,7 +357,7 @@ main#home h1 {
 .about-info .job {
     background: rgba(222, 255, 154, 0.05);
     padding: 0.5rem;
-    border-bottom: #E26EE5 5px solid;
+    border-bottom: var(--accent-pink) 5px solid;
 }
 
 .projects {
@@ -368,7 +376,7 @@ main#home h1 {
 
 .projects img:hover, .projects video:hover {
     transform: translateY(-5px);
-    border-color: #E26EE5;
+    border-color: var(--accent-pink);
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.2s ease-out;
 }
@@ -406,18 +414,18 @@ main#home h1 {
 }
 
 .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #E26EE5;
-    color: #000;
+    background: var(--accent-pink);
+    color: black;
 }
 
 .btn-dark {
-    background: black;
+    background: #222;
     color: #fff;
 }
 
 .btn-light {
     background: #c4c4c4;
-    color: #333;
+    color: var(--btn-bg);
 }
 
 #main-footer {
@@ -571,6 +579,18 @@ body.fun-mode #physics-world {
 /*==================
 PROJECT SHOWCASE
 ===================*/
+.showcase-info h3 {
+    font-size: 2rem;
+    color: var(--accent-cyan);
+    margin-bottom: 1rem;
+}
+
+.project-details {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
 .project-showcase {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -593,13 +613,13 @@ PROJECT SHOWCASE
 .feature-selector button {
   padding: 0.5rem 1rem;
   border: none;
-  background: #333;
+  background: var(--btn-bg);
   color: #fff;
   cursor: pointer;
 }
 
 .feature-selector button.active {
-  background: var(--secondary-color);
+  background: var(--accent-pink);
 }
 
 .image-modal {
@@ -624,4 +644,10 @@ PROJECT SHOWCASE
   font-size: 2rem;
   color: white;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .project-showcase {
+        grid-template-columns: 1fr;
+    }
 }
