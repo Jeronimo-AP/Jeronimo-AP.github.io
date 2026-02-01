@@ -190,6 +190,8 @@ body {
     line-height: 1.5;
 }
 
+.hidden{ display: none;}
+
 /*
 body#background-image {
     background: url(../img/background.png);
@@ -598,7 +600,8 @@ PROJECT SHOWCASE
   margin-top: 2rem;
 }
 
-.showcase-image img {
+.showcase-image img,
+.showcase-image video {
   width: 100%;
   border-radius: 6px;
   cursor: zoom-in;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Site - Bioquímica UNC</title>
+    <title>Personal Portfolio Site - Bioquímica UNC</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="../../scss/styles.css">
 </head>
@@ -31,50 +31,43 @@
 
     <main>
         <h1 class="large-heading">
-            Student <span class="text-secondary">Site</span>
+            Portfolio <span class="text-secondary">Site</span>
         </h1>
-
-        <h2 class="small-heading">
-            bioquimicaunc.com - Academic Community Platform
-        </h2>
 
         <div class="project-details">
             <!-- FEATURE SELECTOR -->
             <div class="feature-selector">
-                <button data-feature="home" class="active">Home</button>
-                <button data-feature="forum">Forum</button>
-                <button data-feature="listings">Listings</button>
-                <button data-feature="resources">Resources</button>
+                <button data-feature="layout" class="active">Layout</button>
+                <button data-feature="animation">Animation</button>
             </div>
 
             <div class="project-showcase">
 
                 <!-- IMAGE PANEL -->
                 <div class="showcase-image">
-                    <img id="featureImage" src="../../img/projects/bioquimicaunc_index.png" alt="Homepage overview">
+                    <img id="featureImage" src="../../img/projects/WebPage.png" alt="Homepage overview" style="border: 2px solid cyan;">
+                    <video id="featureVideo" src="" alt="Homepage overview" style="border: 2px solid cyan;" class="hidden" muted loop playsinline></video>
                 </div>
 
                 <!-- TEXT PANEL -->
                 <div class="showcase-info">
-                    <h3 id="featureTitle">Homepage & Navigation</h3>
+                    <h3 id="featureTitle">Layout & Structure</h3>
 
                     <p id="featureDescription">
-                        Clear landing page with structured navigation to course material,
-                        announcements, and community features. Designed for fast orientation
-                        and accessibility.
+                        Modular layout designed for scalability and clarity.
                     </p>
 
                     <ul class="feature-list">
-                        <li>Responsive layout</li>
-                        <li>Semantic HTML structure</li>
-                        <li>Responsive layout</li>
+                        <li>Reusable components</li>
+                        <li>Grid-based layout</li>
+                        <li>Consistent spacing system</li>
                     </ul>
 
                     <div class="item project-card">
-                        <a href="https://bioquimicaunc.com" target="_blank" class="btn-light">
+                        <a href="https://jeronimo-ap.github.io" target="_blank" class="btn-light">
                             <i class="fas fa-eye"></i> Live Site
                         </a>
-                        <a href="https://github.com/MrMxyzptlk-jpg/bioquimicaunc.git" target="_blank" class="btn-dark">
+                        <a href="https://github.com/Jeronimo-AP/Jeronimo-AP.github.io" target="_blank" class="btn-dark">
                             <i class="fab fa-github"></i> Source Code
                     </a>
                     </div>
@@ -101,7 +94,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../../js/main.js"></script>
     <script type="module">
-        import { projectFeatures } from "../../js/projects/bioquimicaunc.js";
+        import { projectFeatures } from "../../js/projects/portfolio.js";
         import { initProjectShowcase } from "../../js/project-showcase.js";
 
         initProjectShowcase(projectFeatures);
