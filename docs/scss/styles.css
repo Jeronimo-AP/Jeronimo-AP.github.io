@@ -486,7 +486,7 @@ main#home h1 {
                 transform: translate3d(100%, 0, 0);
     }
     .menu-branding .mypicture {
-        background: url(../img/profilePic.jpeg);
+        background: url(../img/profilePic_small.webp);
         width: 150px;
         height: 150px;
     }
