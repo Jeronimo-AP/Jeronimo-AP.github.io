@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cataleya Leather Shop</title>
+
+    <link rel="stylesheet" href="../../scss/styles.css" />
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        crossorigin="anonymous"
+    />
+</head>
+
+<body>
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="mypicture"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="../about.html" class="nav-link">Sobre mí</a></li>
+                <li class="nav-item current"><a href="../work.html" class="nav-link">Proyectos</a></li>
+                <li class="nav-item"><a href="../contact.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="large-heading">
+            Cataleya <span class="text-secondary">Artículos de Cuero</span>
+        </h1>
+
+        <h2 class="small-heading">
+            Un catálogo web ligero y dinámico impulsado por Google Sheets.
+        </h2>
+
+        <div class="project-details">
+            <div class="feature-selector">
+                <button data-feature="landing" class="active">Landing</button>
+                <button data-feature="catalog">Catálogo</button>
+                <button data-feature="product">Vista de Producto</button>
+                <button data-feature="system">Sistema de Productos</button>
+                <button data-feature="tech">Tecnología</button>
+            </div>
+
+            <div class="project-showcase">
+                <div class="showcase-image">
+                <img id="featureImage" alt="Vista previa de Cataleya" />
+                <video id="featureVideo" class="hidden" muted loop playsinline></video>
+                </div>
+
+                <div class="showcase-info">
+                <h3 id="featureTitle"></h3>
+                <p id="featureDescription"></p>
+
+                <ul class="feature-list"></ul>
+
+                <div class="item project-card">
+                    <a
+                    href="https://mrmxyzptlk-jpg.github.io/artisan-leather-website/"
+                    class="btn-light"
+                    target="_blank"
+                    >
+                    <i class="fas fa-store"></i> Sitio en Vivo
+                    </a>
+
+                    <a
+                    href="https://github.com/MrMxyzptlk-jpg/artisan-leather-website.git"
+                    class="btn-dark"
+                    target="_blank"
+                    >
+                    <i class="fab fa-github"></i> Código Fuente
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer">&copy; 2026</footer>
+
+    <canvas id="bg-simulation"></canvas>
+
+    <script type="module" src="../../js/bg-sim.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../../js/main.js"></script>
+
+    <script type="module">
+        import { cataleyaFeatures } from "../../js/projects/es/cataleya-shop.js";
+        import { initProjectShowcase } from "../../js/project-showcase.js";
+
+        initProjectShowcase(cataleyaFeatures);
+
+        requestAnimationFrame(() => {
+        document.querySelector('[data-feature="landing"]')?.click();
+        });
+    </script>
+</body>
+</html>
